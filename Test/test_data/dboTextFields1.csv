@@ -1,0 +1,9 @@
+ID,Field_varchar_4,Field_varchar_1,Field_char_4,Field_char_1,Field_nchar_4,Field_nchar_1,Field_nvarchar_4,Field_nvarchar_1
+1,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL
+2,A,A,"A   ",A,"A   ",A,A,A
+3,£,£,"£   ",£,"£   ",£,£,£
+4,AAAA,NULL,AAAA,NULL,AAAA,NULL,AAAA,NULL
+5,££££,NULL,££££,NULL,££££,NULL,££££,NULL
+6,,,"    "," ","    "," ",,
+7,,|,"    ",|,"    ",|,,|
+8,|,,"|   "," ","|   "," ",|,

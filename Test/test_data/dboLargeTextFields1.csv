@@ -1,0 +1,7 @@
+ID,Field_text,Field_varchar_MAX,Field_xml,Field_varchar_8000,Field_ntext
+1,1ABCDEFG1,NULL,NULL,NULL,NULL
+2,NULL,2ABCDEFG2,NULL,NULL,NULL
+3,NULL,NULL,"<OuterElement OuterAttribute=""OuterAttributeValue""><InnerElement InnerAttribute=""InnerAttributeValue"">Value</InnerElement></OuterElement>",NULL,NULL
+4,NULL,NULL,NULL,3ABCDEFG3,NULL
+5,NULL,NULL,NULL,NULL,4ABCDEFG4
+6,1ABCDEFG1,2ABCDEFG2,"<OuterElement OuterAttribute=""OuterAttributeValue""><InnerElement InnerAttribute=""InnerAttributeValue"">Value</InnerElement></OuterElement>",3ABCDEFG3,4ABCDEFG4

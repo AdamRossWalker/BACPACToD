@@ -1,0 +1,14 @@
+{
+	"name": "bacpactodtest",
+    "targetName": "BACPACToDTest",
+    "targetType": "executable",
+    "targetPath": "bin",
+    "authors": ["Adam Walker"],
+    "buildRequirements": ["allowWarnings"],
+    "description": "BACPACToDTest",
+    "copyright": "Copyright © 2023, Adam Walker",
+    "license": "proprietary", 
+    "sourceFiles": [
+        "./resources/resources.res", 
+    ], 
+}

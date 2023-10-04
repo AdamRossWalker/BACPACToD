@@ -1,0 +1,2 @@
+ID,Field_date,Field_datetime,Field_datetimeoffset_7,Field_datetime2_7,Field_timestamp,Field_smalldatetime,Field_time_7
+1,2003-02-01,2003-02-01 11:22:33.123,2003-02-01 11:22:33.1234567 +04:55,2003-02-01 11:22:33.1234567,0x0000000000004652,2003-02-01 11:23:00,11:22:33.0000000
