@@ -1,0 +1,43 @@
+BACPAC To D
+
+Provides D read-only access to SQL Server BACPAC files.
+This program will pre-process BACPAC files and generate D code that you can then include in your D project.
+
+It creates a source file for every parsed BACPAC file.  This is a list of annotated structs for each table 
+in the BACPAC.  It also outputs a pre-written D file which includes methods to read this data given a BACPAC 
+at run time.  
+
+This enables fast introspected full data fetches.  The trade off is that the schema of the runtime version is 
+expected to match the compiled version, and changes to this schema will require recompilation of your project.  
+
+This program does not provide any indexed access, data processing, or a query layer.  It is designed to extract 
+records out of a runtime provided BACPAC file into native D types ready for use.  It cannot write changes back 
+to the BACPAC.
+
+The expected use case is to read a whole table once, then keep the returned collection for later use.  Although 
+the access is designed to be fast, it does require opening the BACPAC and decompressing the data, so this should
+not be repeated unnecessarily.
+
+Usage:
+
+BACPACToD [--input input_path_filter] [--output_directory directory_name] [--module_name destination_module_name]
+
+  --input input_path_filter
+    Where `input_path_filter` is the directory location and filter for any BACPAC files.  It is recommended that this
+    ends with `.bacpac`.The default is `*.bacpac`.
+
+  --output_directory directory_name
+    Where `directory_name` is the location the D files will be written to.  This will be one file for each processed 
+    BACPAC, and bacpac.d which you can use to access the data.  If only one BACPAC is found, the destination filename 
+    will be 
+    
+  --module_name destination_module_name
+    Where `destination_module_name` can be used to specify the output module name if there is only one input BACPAC
+    file.  If there are multiple input BACPAC files, then module names are inferred from the source files.
+    The default is "table_definitions".
+    
+Return codes:
+    0 - Success
+    1 - Help shown
+    2 - No files found
+    3 - Invalid or unexpected BACPAC contents or other failure

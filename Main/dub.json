@@ -1,0 +1,21 @@
+{
+	"name": "bacpactod",
+    "targetName": "BACPACToD",
+    "targetType": "executable",
+    "targetPath": "bin",
+    "authors": ["Adam Walker"],
+    "buildRequirements": ["allowWarnings"],
+    "description": "BACPACToD",
+    "copyright": "Copyright © 2023, Adam Walker",
+    "license": "proprietary", 
+    "dependencies": {
+        "dxml": "~>0.4.4",
+    }, 
+    "sourceFiles": [
+        "./resources/resources.res", 
+    ], 
+    "stringImportPaths": [
+        "./source",
+        "./resources",
+    ]
+}

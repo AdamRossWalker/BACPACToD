@@ -1,0 +1,2 @@
+     Warning Excluding main source file source\app.d from test.
+1 modules passed unittests
